@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/settings'>
+  <table>
+    <p>settings</p>
+    <tr>
+      <td>最大値：</td>
+      <td>
+        <input type="text" name="max_right_answer" value="test" width='100'>
+      </td>
+    </tr>
+    <tr>
+      <td>回答チャンス数：</td>
+      <td>
+        <input type="text" name='max_trial' value="出るかね？" width='100'>
+      </td>
+    </tr>
+
+  </table>
+
+  <p>ENTER</p>
+  <p>
+    <input type="submit" value="実行">
+  </p>
+</form>
+{% endblock %}

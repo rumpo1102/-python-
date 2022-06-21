@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block body %}
+<h2> {{ the_title }} </h2>
+
+<form method='post' action='/search4'>
+
+  <p>print('0～',maxRightAnswer,'までの数字から、正解だと思う数字を入力してください。チャンスは', maxTrial, '回！\n')
+  </p>
+
+  <p>回答入力</p>
+  <imput name='guess_answer' type='text' width='100'>
+
+    <p>
+      <import value='送信' type='SUBMIT'>
+    </p>
+</form>
+{% endblock %}
